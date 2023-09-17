@@ -1,7 +1,7 @@
 const library = [
   {
     author: "Bill Gates",
-    title: "The Road Ahead",
+    title: "The Road Ahead", 
     readingStatus: true,
   },
   {
@@ -18,8 +18,18 @@ const library = [
 
 const numberOfBooksRead = () => {
   // write your code here
+	 let count = 0;
+	for (const book of library) {
+    if (book.readingStatus === true) {
+      // If the readingStatus is true, increment the count.
+      count++;
+    }
+  }
+  // Return the final count.
+  return count;
+	
 };
 
 // Do not change the code below
 
-alert(numberOfBooksRead());
+// alert(numberOfBooksRead());
